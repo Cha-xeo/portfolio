@@ -3,10 +3,10 @@ import Link from 'next/link'
 export default function Page() {
   return (
     <>
-      <h1>Home page</h1>
+      <h1>Dashboard</h1>
       <ul>
         <li>
-          <Link href="/dashboard">Dashboard</Link>
+          <Link href="/">Home</Link>
         </li>
         <li>
           <Link href="/games">Games</Link>
