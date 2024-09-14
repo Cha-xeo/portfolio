@@ -1,5 +1,6 @@
 import WebglgamesRepository from '@/repositories/prisma/WebglgamesRepository';
 import { PrismaClient } from '@prisma/client';
+import Image from 'next/image';
 import Link from 'next/link';
 const db = new PrismaClient()
 
@@ -29,7 +30,7 @@ export default async function Page() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
         {games.map( (game) => (
           <div key={game.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src={game.webglgamesimages.at(0)?.url} alt={game.name} className="w-full h-48 object-cover" />
+          <Image src={game.webglgamesimages.at(0)?.url ?? ""} alt={game.name} className="w-full h-48 object-cover" />
           <div className="p-6">
             <h2 className="text-xl font-semibold mb-4">{game.name}</h2>
             <p className="text-gray-600 mb-4">{game.description}</p>

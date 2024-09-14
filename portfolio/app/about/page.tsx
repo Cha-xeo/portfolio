@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link'
 
 
@@ -7,7 +8,6 @@ export default function Page() {
         <section className='h-[calc(100vh-4rem)]' id="intership">
             <article className='py-10'>
                 <div className="md:container md:mx-auto">
-                    {/* <img className="float-right rounded-full w-36 h-36 " src="https://cha-xeo.github.io/PortfolioFiles/me.png"  alt="Me" /> */}
                     <h2 className='text-center py-5'>My years at Epitech</h2> <br />
                     <p className='clear-left'>I started my journey as a developer in 2020 when I joined Epitech. <br />
                         The first years were challenging as Epitech uses a project-based curriculum. 
@@ -66,7 +66,7 @@ export default function Page() {
 
                     <div className="w-full md:w-1/2 p-4 ">
                         <div className="bg-gray-300 border-0 rounded-lg shadow-lg overflow-hidden" >
-                            <img className="pt-5 mx-auto w-24 h-24" src="https://cha-xeo.github.io/PortfolioFiles/pmsm-m.webp"   alt="Pms Médicalisation"/>
+                            <Image className="pt-5 mx-auto w-24 h-24" src="https://cha-xeo.github.io/PortfolioFiles/pmsm-m.webp" alt="Pms Médicalisation"/>
                             <div className="p-4 text-center">
                                 <h5 className="text-lg font-semibold">Pms Médicalisation</h5>
                                 <p className="text-base">Full-stack web developer | August 2021 - December 2021</p>
@@ -104,7 +104,7 @@ export default function Page() {
                     </div>
                     <div className="w-full md:w-1/2 p-4">
                         <div className="bg-gray-300 border-0 rounded-lg shadow-lg overflow-hidden" >
-                            <img className="pt-5 mx-auto w-24 h-24" src="https://cha-xeo.github.io/PortfolioFiles/winlink.png"  alt="Winlink systems"/>
+                            <Image className="pt-5 mx-auto w-24 h-24" src="https://cha-xeo.github.io/PortfolioFiles/winlink.png"  alt="Winlink systems"/>
                             <div className="p-4 text-center">
                                 <h5 className="text-lg font-semibold">Winlink systems</h5>
                                 <p className="text-base">Full-stack web developer | March 2024 - September 2024</p>
@@ -113,7 +113,7 @@ export default function Page() {
                         <div className="bg-gray-100 border-0 rounded-lg shadow-lg overflow-hidden text-start justify-start" >
                             <p className='m-5'>
                                 During this internship, I worked on web development and learned about customer support. <br />
-                                My tasks included adding features to Winlink's 'MDA' solution, which is an Enterprise Resource Planning (ERP) system. <br />
+                                My tasks included adding features to Winlink&aposs &aposMDA&apos solution, which is an Enterprise Resource Planning (ERP) system. <br />
                                 I focused on implementing quality-of-life features while addressing customer demands. <br />
                                 As I was responsible for customer support, I interacted directly with customers to understand their needs.
                             </p>
