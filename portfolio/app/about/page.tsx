@@ -66,7 +66,12 @@ export default function Page() {
 
                     <div className="w-full md:w-1/2 p-4 ">
                         <div className="bg-gray-300 border-0 rounded-lg shadow-lg overflow-hidden" >
-                            <Image className="pt-5 mx-auto w-24 h-24" src="https://cha-xeo.github.io/PortfolioFiles/pmsm-m.webp" alt="Pms Médicalisation"/>
+                            <Image
+                            className="pt-5 mx-auto w-24 h-24"
+                            src="https://cha-xeo.github.io/PortfolioFiles/pmsm-m.webp"
+                            width={150}
+                            height={150}
+                            alt="Pms Médicalisation"/>
                             <div className="p-4 text-center">
                                 <h5 className="text-lg font-semibold">Pms Médicalisation</h5>
                                 <p className="text-base">Full-stack web developer | August 2021 - December 2021</p>
@@ -104,7 +109,12 @@ export default function Page() {
                     </div>
                     <div className="w-full md:w-1/2 p-4">
                         <div className="bg-gray-300 border-0 rounded-lg shadow-lg overflow-hidden" >
-                            <Image className="pt-5 mx-auto w-24 h-24" src="https://cha-xeo.github.io/PortfolioFiles/winlink.png"  alt="Winlink systems"/>
+                            <Image
+                            className="pt-5 mx-auto w-24 h-24"
+                            src="https://cha-xeo.github.io/PortfolioFiles/winlink.png"
+                            width={150}
+                            height={150}
+                            alt="Winlink systems"/>
                             <div className="p-4 text-center">
                                 <h5 className="text-lg font-semibold">Winlink systems</h5>
                                 <p className="text-base">Full-stack web developer | March 2024 - September 2024</p>

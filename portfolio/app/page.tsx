@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Image from 'next/image';
 
 export default function Page() {
   return (
@@ -32,7 +33,9 @@ export default function Page() {
               <div className="w-full md:w-1/2 px-4 mb-8">
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                   <a href="https://search.isepstudyabroad.org/University/Detail/b4f15f5a-4f18-4351-bbea-55d3655c63cd">
-                    <img 
+                    <Image
+                      width={150}
+                      height={150} 
                       src="https://cha-xeo.github.io/PortfolioFiles/keimyung.png" 
                       className="w-full pt-5 h-64 object-contain" 
                       alt="Daegu" 
@@ -49,7 +52,9 @@ export default function Page() {
               <div className="w-full md:w-1/2 px-4 mb-8">
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                   <a href="https://www.epitech.eu/">
-                    <img 
+                    <Image
+                      width={150}
+                      height={150} 
                       src="https://cha-xeo.github.io/PortfolioFiles/Epitech2.png" 
                       className="rounded-lg pt-5 w-full h-64 object-contain" 
                       alt="Epitech" 
