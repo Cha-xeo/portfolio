@@ -1,17 +1,13 @@
 import Link from 'next/link'
 
+const url: string = "https://api.mobygames.com/v1/games?format=normal";
+const api_key: string = "moby_GjKfllKJGOLmrL9MH3npslwdQ44"
+
 export default function Page() {
-  return (
+  // ?api_key=YOUR_KEY  
+return (
     <>
-      <h1>gamesapi</h1>
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/games">Games</Link>
-        </li>
-      </ul>
+      
     </>
   );
 }

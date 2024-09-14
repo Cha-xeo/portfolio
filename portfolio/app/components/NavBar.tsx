@@ -26,7 +26,7 @@ const NavBar = () => {
       },
     ];
   return (
-    <nav className="sticky flex justify-between items-center w-full h-20 px-4 text-white bg-black nav">
+    <nav className="sticky flex justify-between items-center w-full h-16 px-4 text-white bg-black nav z-50">
       <div>
         <h1 className="text-5xl font-signature ml-2">
           <a
