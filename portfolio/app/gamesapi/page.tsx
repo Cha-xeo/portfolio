@@ -2,15 +2,14 @@ import { useEffect } from 'react';
 import { MobyGameList } from '../components/MobyGameList';
 import { error } from 'console';
 
-const api_key: string = "moby_GjKfllKJGOLmrL9MH3npslwdQ44"
 const url: string = "https://api.mobygames.com/v1/";
 
 function constructURL(endpoint: string, searchQuery: string = ""): string{
   const params:URLSearchParams = new URLSearchParams({
-    api_key: api_key,
+    api_key: process.env.SECRET_API_KEY ?? "",
     format: searchQuery,
   });
-  
+  console.log(params.toString());
   return `${url}/${endpoint}?${params.toString()}`;
 }
 
