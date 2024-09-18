@@ -5,6 +5,7 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <div className='h-[calc(100vh-4rem)] overflow-y-scroll snap-mandatory snap-y relative'>
+      
       <section className='h-[calc(100vh-4rem)] snap-start flex flex-col relative justify-center items-center' id="welcome-section" style={{backgroundColor: '#232323'}}>
         <h1 className='font-extrabold text-xl sm:text-6xl italic text-wit' style={{margin: '30px'}}>Arnaud Lalande</h1>
         <h2 className='font-extralight text-2xl sm:text-4xl italic text-gold' >Junior developer</h2>
