@@ -30,19 +30,24 @@ async function fetchRecentGames(): Promise<Normal[]>  {
     return data.games;
   } catch (error) {
     console.error('Error fetching games:', error);
-    return [];
+    const aled: Normal[] = [];
+    return aled;
   }
 };
 
 export default async function Page() {
   const games: Normal[] = await fetchRecentGames();
-  // games.forEach(game  => {
-    // console.log(game.game_id);
-    // console.log(game.sample_cover.image);
-  // });
   return (
     <>
-      <MobyGameList games={games} /> 
+      <h1 className='font-extrabold bg-gray-100 text-xl sm:text-6xl italic m-26 text-center'>Recent</h1>
+      <MobyGameList games={games} />
+      <footer className="bg-gray-800 text-white py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className=" text-center text-lg">
+            Data provided by <a className="text-cyan-400" href="https://www.mobygames.com/">MobyGames</a>.
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
