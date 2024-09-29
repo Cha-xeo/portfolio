@@ -6,9 +6,8 @@ import Link from "next/link"
 
 export default function GameCard({game}: {game: Webglgames}) {
     const t = useTranslations('games.game');
-
     return (
-        <div key={game.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
                 src={game.webglgamesimages.at(0)?.url ?? ""}
                 width={150}

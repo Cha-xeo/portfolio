@@ -1,7 +1,5 @@
 import WebglgamesRepository from '@/repositories/prisma/WebglgamesRepository';
-import { PrismaClient, webglgames } from '@prisma/client';
-import GameCard from '../components/GameCard';
-import { useTranslations } from 'next-intl';
+import { PrismaClient } from '@prisma/client';
 import MyGames from '../components/MyGames';
 const db = new PrismaClient()
 

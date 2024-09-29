@@ -1,3 +1,5 @@
+'use client'
+
 import GameCard from "./GameCard";
 import { useTranslations } from "next-intl";
 
@@ -9,8 +11,10 @@ export default function MyGames({games}: {games: Webglgames[]}) {
         <div className="min-h-screen bg-gray-100 flex items-center justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
             {games.map( (game) => (
+              <div key={game.id}>
                 <GameCard game={game}/>
-              ))};
+              </div>
+              ))}
           </div>
         </div>
       </div>
