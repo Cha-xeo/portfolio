@@ -1,7 +1,8 @@
 import WebglgamesRepository from '@/repositories/prisma/WebglgamesRepository';
-import { PrismaClient } from '@prisma/client';
-import Image from 'next/image';
-import Link from 'next/link';
+import { PrismaClient, webglgames } from '@prisma/client';
+import GameCard from '../components/GameCard';
+import { useTranslations } from 'next-intl';
+import MyGames from '../components/MyGames';
 const db = new PrismaClient()
 
 async function getGames(){
@@ -21,35 +22,10 @@ async function getGames(){
 
 export default async function Page() {
   const games = await getGames();
-  // const re = await fetch ('https://api.github.com/repos/vercel/next.js');
-  // console.log(re);
-  // const data = await re.json();
-  // console.log(data);
+
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
-        {games.map( (game) => (
-          <div key={game.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <Image
-            src={game.webglgamesimages.at(0)?.url ?? ""}
-            width={150}
-            height={150}
-            alt={game.name} className="w-full h-48 object-cover"
-          />
-          <div className="p-6">
-            <h2 className="text-xl font-semibold mb-4">{game.name}</h2>
-            <p className="text-gray-600 mb-4">{game.description}</p>
-            <Link href={{
-                  pathname: `/games/${game.id}`, // Will match `/users/some-slug` path
-              }}>
-              <button className="bg-blue-500 text-white rounded px-4 py-2" >
-                Play the game
-              </button>
-            </Link>
-          </div>
-        </div>
-      ))};
-      </div>
+    <div>
+      <MyGames games={games}/>
     </div>
   );
 };

@@ -9,14 +9,9 @@ import Image from 'next/image';
 import GameDescription from './GameDescription';
 
 export const MobyGameList: React.FC<NormalGamesResponse> = ({ games }) => {
-    const [isClient, setIsClient] = useState(false);
-
-    useEffect(() => {
-        setIsClient(true);
-    }, []);
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-        <div className="max-h-screen overflow-y-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+    <div className="container mx-auto bg-gray-100 flex items-center justify-center">
+        <div className="max-h-screen overflow-y-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 p-8">
             {games.map((game: Normal) => (
                 <div key={game.game_id} className="bg-white rounded-lg shadow-lg overflow-hidden">
                     <div className="pt-5 pb-5 bg-blue-100 rounded-lg shadow-lg overflow-hidden">
@@ -45,7 +40,7 @@ export const MobyGameList: React.FC<NormalGamesResponse> = ({ games }) => {
                         </Link>
                     </div>
                 </div>
-            ))};
+            ))}
 
         </div>
     </div>

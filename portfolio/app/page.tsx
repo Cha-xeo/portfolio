@@ -1,14 +1,15 @@
 import Link from 'next/link'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function Page() {
+  const t = useTranslations('HomePage');
   return (
     <div className='h-[calc(100vh-4rem)] overflow-y-scroll snap-mandatory snap-y relative'>
-      
       <section className='h-[calc(100vh-4rem)] snap-start flex flex-col relative justify-center items-center' id="welcome-section" style={{backgroundColor: '#232323'}}>
         <h1 className='font-extrabold text-xl sm:text-6xl italic text-wit' style={{margin: '30px'}}>Arnaud Lalande</h1>
-        <h2 className='font-extralight text-2xl sm:text-4xl italic text-gold' >Junior developer</h2>
+        <h2 className='font-extralight text-2xl sm:text-4xl italic text-gold' >{t('welcome.title')}</h2>
         {/* Scroll Down Indicator */}
         <div className="absolute bottom-4 animate-bounce">
           <a href="#studies">
@@ -27,7 +28,7 @@ export default function Page() {
       </section>
 
       <section className='h-[calc(100vh-4rem)] bg-gray-100 snap-start flex flex-col relative justify-center items-center' id="studies">
-          <h1 className="font-extrabold text-4xl sm:text-6xl italic text-center pb-20">My academic background includes</h1>
+          <h1 className="font-extrabold text-4xl sm:text-6xl italic text-center pb-20">{t('academic.title')}</h1>
             <div className='flex flex-row '>
 
               {/* Keimyung University */}
@@ -43,8 +44,8 @@ export default function Page() {
                       />
                   </a>
                   <div className="p-6">
-                    <h5 className="text-xl font-semibold mb-4">Keymiung University</h5>
-                    <p className="text-gray-600 mb-4">Keymiung University located in Daegu</p>
+                    <h5 className="text-xl font-semibold mb-4">{t('academic.keymiung.title')}</h5>
+                    <p className="text-gray-600 mb-4">{t('academic.keymiung.desc')}</p>
                   </div>
                 </div>
               </div>
@@ -62,8 +63,8 @@ export default function Page() {
                       />
                   </a>
                   <div className="p-6">
-                    <h5 className="text-xl font-semibold mb-4">Epitech University</h5>
-                    <p className="text-gray-600 mb-4">Epitech University located in Marseille</p>
+                    <h5 className="text-xl font-semibold mb-4">{t('academic.epitech.desc')}</h5>
+                    <p className="text-gray-600 mb-4">{t('academic.epitech.desc')}</p>
                   </div>
                 </div>
               </div>
@@ -88,7 +89,7 @@ export default function Page() {
       </section>
 
       <section className='h-[calc(100vh-4rem)] snap-start relative flex flex-col justify-between items-center' id="contacts" style={{backgroundColor: '#232323'}}>
-        <h1 className='font-extrabold text-4xl sm:text-6xl italic self-center text-wit py-24'>Contact me</h1>
+        <h1 className='font-extrabold text-4xl sm:text-6xl italic self-center text-wit py-24'>{t('academic.contact.title')}</h1>
         <div id="links" className="flex-grow flex items-center justify-center">
           <ul className="flex flex-col items-center space-y-4 text-lg">
             <li>

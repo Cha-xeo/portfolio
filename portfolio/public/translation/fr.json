@@ -1,0 +1,94 @@
+{
+    "HomePage": {
+      "welcome":{
+        "title": "Développeur junior"
+      },
+      "academic":{
+        "title": "Mon parcours académique",
+        "keymiung":{
+          "title": "Université de Keymiung",
+          "desc": "Université situé à Daegu en Corée du sud"
+        },
+        "epitech":{
+          "title": "EPITECH",
+          "desc": "Université situé à Marseille et Paris"
+        },
+        "contact":{
+          "title": "Me contacter"
+        }
+      }
+    },
+    "About": {
+      "aboutme": {
+        "me": {
+          "title": "Mes années à Epitech",
+          "text": "J'ai commencé mon parcours en tant que développeur en 2020 lorsque j'ai rejoint Epitech. <br></br> Les premières années ont été difficiles car Epitech utilise un programme basé sur des projets. Cela m'a permis d'apprendre à apprendre, à travailler en groupe et de manière autonome. J'ai également eu l'opportunité de passer une année en Corée du Sud à l'Université de Keimyung. <br></br> Keimyung propose de nombreux programmes, et j'étais inscrit à un programme de création de jeux vidéo. Certains de ces projets sont disponibles pour jouer sur ce site dans la section Jeux."
+        },
+        "hobbies": {
+          "title": "Mes Loisirs",
+          "subtitle": "Quelques-un de mes hobbies.",
+          "games": {
+            "title": "Jeux vidéo",
+            "text": "J'ai toujours joué aux jeux vidéo. Mon premier jeu vidéo était Kingdom Hearts II et depuis, j'adore les jeux vidéo."
+          },
+          "books": {
+            "title": "Livres",
+            "text": "Depuis que je suis enfant, j'ai toujours aimé les romans fantastiques et les mangas."
+          },
+          "travels": {
+            "title": "Voyages",
+            "text": "J'ai eu l'opportunité de passer une année en Corée du Sud et depuis, je prévois de visiter de nouveaux endroits."
+          }
+        }
+      },
+      "exp": {
+        "title": "Mes expériences",
+        "subtitle": "Voici mes stages.",
+        "pmsm": {
+          "title": "Développeur web Full-stack | Août 2021 - Décembre 2021",
+          "description": "Pendant ce stage, j'ai appris les bases du développement web, y compris MVC, MVVM et la programmation orientée objet. <br></br> Mes tâches consistaient à ajouter des fonctionnalités à un système ERP (Enterprise Resource Planning) interne existant. <br></br> Ma tâche finale consistait à rationaliser le processus de recrutement en créant des systèmes qui réduisaient la communication nécessaire entre les ressources humaines et les commerciaux. <br></br> J'ai développé une nouvelle interface utilisateur pour tout regrouper en un seul endroit, et côté back-end, j'ai géré le flux de données pour m'assurer que les bonnes informations étaient envoyées aux bonnes personnes au bon moment.",
+          "techno_title": "Langage et framework utilisés :",
+          "techno": {
+            "ext": "Javascript ExtJs version 3 et 6"
+          }
+        },
+        "winlink": {
+          "title": "Développeur web Full-stack | Mars 2024 - Septembre 2024",
+          "description": "Pendant ce stage, j'ai travaillé sur le développement web et j'ai appris à gérer le support client. <br></br> Mes tâches incluaient l'ajout de fonctionnalités à la solution 'MDA' de Winlink, qui est un système ERP (Enterprise Resource Planning). <br></br> Je me suis concentré sur la mise en œuvre de fonctionnalités pratiques tout en répondant aux demandes des clients. <br></br> Étant responsable du support client, j'ai interagi directement avec les clients pour comprendre leurs besoins.",
+          "techno_title": "Langage et framework utilisés :"
+        }
+      }
+    },
+    "NavBar":{
+      "title": "Accueil",
+      "about": "A propos",
+      "experience": "Expériences",
+      "games": "Jeux",
+      "mobygames": "Client MobyGames"
+    },
+    "Lang":{
+      "english": "Anglais",
+      "french": "Français",
+      "label": "Langage"
+    },
+    "mobygames": {
+      "title": "Rechercher des jeux sur MobyGames",
+      "data": "Donnée fournie par",
+      "form": {
+        "label": "Recherche",
+        "placeholder": "Entrez un nom",
+        "button": "Rechercher",
+        "error_no_game": "Aucun jeux trouver avec un nom comme:",
+        "loading": "Chargement..."
+      }
+    },
+    "experience":{
+      "title": "5 ans d'expérience professionnelle non trouvés"
+    },
+    "games": {
+      "title": "Différent jeux créeé au cours de mes études",
+      "game":{
+        "play_button": "Jouer au jeu"
+      }
+    }
+  }

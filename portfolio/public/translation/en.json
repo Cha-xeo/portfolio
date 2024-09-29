@@ -1,0 +1,94 @@
+{
+  "HomePage": {
+    "welcome":{
+        "title": "Junior developer"
+      },
+      "academic":{
+        "title": "My academic background includes",
+        "keymiung":{
+          "title": "Keymiung University",
+          "desc": "Keymiung University located in Daegu"
+        },
+        "epitech":{
+          "title": "Epitech University",
+          "desc": "Epitech University located in Marseille and Paris"
+        },
+        "contact":{
+          "title": "Contact me"
+        }
+      }
+  },
+  "About": {
+    "aboutme":{
+      "me":{
+        "title": "My years at Epitech",
+        "text": "I started my journey as a developer in 2020 when I joined Epitech. <br></br> The first years were challenging as Epitech uses a project-based curriculum.It allowed me to learn how to learn, work in groups, and work independently. I also had the opportunity to spend a year in South Korea at Keimyung University. <br></br> Keimyung offers many programs, and I was enrolled in a video game creation program.Some of those projects are available to play on this site in the Games section."
+      },
+      "hobbies":{
+        "title": "My Hobbies",
+        "subtitle": "Some of the things I like.",
+        "games": {
+          "title": "Video games",
+          "text": "I have always played video games. My first video game ever was kingdom hearts II and since then I loved video games."
+        },
+        "books": {
+          "title": "Books",
+          "text": "Since I am a child I always loved fantasy novel and mangas."
+        },
+        "travels": {
+          "title": "Travels",
+          "text": "I had the opportunity to spend a year in South Korea and since then I am planning to visit new places."
+        }
+      }
+    },
+    "exp":{
+      "title": "My experiences",
+      "subtitle": "Those are my internship.",
+      "pmsm":{
+        "title": "Full-stack web developer | August 2021 - December 2021",
+        "description": "During this internship, I learned the basics of web development, including MVC, MVVM, and object-oriented programming. <br></br> My tasks involved adding features to an existing in-house Enterprise Resource Planning (ERP) system. <br></br> My final task was to streamline the recruitment process by creating systems that reduced the amount of communication needed between human resources and commercials. <br></br> I developed a new user interface to consolidate everything in one place, and on the back-end,I managed the flow of data to ensure the right information was sent to the appropriate parties at the right time.",
+        "techno_title": "Language and framework used:",
+        "techno":{
+          "ext": "Javascript ExtJs version 3 and 6"
+        } 
+      },
+      "winlink":{
+        "title": "Full-stack web developer | March 2024 - September 2024",
+        "description": "During this internship, I worked on web development and learned about customer support. <br></br> My tasks included adding features to Winlink's 'MDA' solution, which is an Enterprise Resource Planning (ERP) system. <br></br> I focused on implementing quality-of-life features while addressing customer demands. <br></br> As I was responsible for customer support, I interacted directly with customers to understand their needs.",
+        "techno_title": "Language and framework used:"
+      }
+    }
+  },
+  "NavBar":{
+    "title": "Home",
+    "about": "About",
+    "experience": "Experiences",
+    "games": "Games",
+    "mobygames": "MobyGames Client"
+  },
+  "Lang":{
+    "english": "English",
+    "french": "French",
+    "label": "Language"
+  },
+  "mobygames":{
+    "title": "Search for games on MobyGames",
+    "data": "Data provided by",
+    "form":{
+      "label": "Search",
+      "placeholder": "Search games",
+      "button": "Search",
+      "error_no_game": "No game found with name like:",
+      "loading": "Loading..."
+    }
+  },
+  "experience":{
+    "title": "5 years working experience not found"
+  },
+  "games": {
+    "title": "Some games I made during my studies",
+      "game":{
+        "play_button": "Play the game"
+      }
+  }
+}
