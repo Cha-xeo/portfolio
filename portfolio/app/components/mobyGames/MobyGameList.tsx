@@ -8,6 +8,7 @@ import Link from 'next/link'
 import Image from 'next/image';
 import GameDescription from './GameDescription';
 
+// Preferred option in most cases (Arrow Function)
 export const MobyGameList: React.FC<NormalGamesResponse> = ({ games }) => {
   return (
     <div className="container mx-auto bg-gray-100 flex items-center justify-center">

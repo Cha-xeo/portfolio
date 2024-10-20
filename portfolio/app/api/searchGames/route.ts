@@ -31,10 +31,16 @@ async function fetchRecentGames(): Promise<Normal[]>  {
   }
 };
 
+export async function fetchGamesById(id: number) {
+  const apiKey = process.env.SECRET_API_KEY ?? "";
+  const response = await fetch(`${url}games?api_key=${apiKey}&format=normal&id=${id}`);
+  const data: NormalGamesResponse = await response.json();
+  return data.games[0]; // return NormalGamesResponse
+};
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const search = searchParams.get('search');
-  console.log(search?.length);
 
   if (!search || typeof search !== 'string') {
     try {

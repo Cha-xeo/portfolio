@@ -1,4 +1,4 @@
-import MobyGameSearch from '../components/MobyGameSearch';
+import MobyGameSearch from '../components/mobyGames/MobyGameSearch';
 import { useTranslations } from 'next-intl';
 
 export default function Page() {
