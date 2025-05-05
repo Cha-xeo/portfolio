@@ -1,6 +1,9 @@
-// // app/api/searchGames/route.ts
+// app/api/searchGames/route.ts
 
-// import { NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
+export async function GET(request: Request) {
+  return NextResponse.json({ error: 'Failed to fetch games' }, { status: 500 });
+}
 // const url: string = "https://api.mobygames.com/v1/";
 
 // async function fetchGamesBySearchTerm(searchTerm: string) {
