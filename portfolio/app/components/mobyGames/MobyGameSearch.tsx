@@ -10,23 +10,23 @@ export default function MobyGameSearch() {
     const [isLoading, setIsLoading] = useState(false);
     const t = useTranslations('mobygames');
 
-    useEffect(() => {
-        async function fetchGames() {
-            const response = await fetch(`/api/searchGames?search=`);
-            const data = await response.json();
-            setFilteredGames(data.games);
-        }
-        fetchGames();
-    }, [])
+    // useEffect(() => {
+    //     async function fetchGames() {
+    //         const response = await fetch(`/api/searchGames?search=`);
+    //         const data = await response.json();
+    //         setFilteredGames(data.games);
+    //     }
+    //     fetchGames();
+    // }, [])
 
     // Function to fetch games from API based on search term
     async function  handleSubmit (formData: FormData) {
         setIsLoading(true);
         try {
-            setSearchTerm(formData.get("search")?.toString() ?? "");
-            const response = await fetch(`/api/searchGames?search=${formData.get("search")}`);
-            const data = await response.json();
-            setFilteredGames(data.games);
+            // setSearchTerm(formData.get("search")?.toString() ?? "");
+            // const response = await fetch(`/api/searchGames?search=${formData.get("search")}`);
+            // const data = await response.json();
+            // setFilteredGames(data.games);
         } catch (error) {
             console.error('Failed to fetch games:', error);
         } finally {
@@ -60,7 +60,8 @@ export default function MobyGameSearch() {
             <MobyGameList games={filteredGames} />
             :
             <div>
-                {t('form.error_no_game')} {searchTerm}
+                {/* {t('form.error_no_game')} {searchTerm} */}
+                {t('invalid_key')} {searchTerm}
             </div>
             }
         </div>

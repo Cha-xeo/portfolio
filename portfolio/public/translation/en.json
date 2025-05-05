@@ -74,6 +74,7 @@
   "mobygames":{
     "title": "Search for games on MobyGames",
     "data": "Data provided by",
+    "invalid_key": "Due to changes in the MobyGames API policies, this feature no longer works",
     "form":{
       "label": "Search",
       "placeholder": "Search games",

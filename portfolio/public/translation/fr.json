@@ -74,6 +74,7 @@
     "mobygames": {
       "title": "Rechercher des jeux sur MobyGames",
       "data": "Donnée fournie par",
+      "invalid_key": "En raison de changements dans les politiques de l'API de MobyGames, cette fonctionnalité ne fonctionne plus.",
       "form": {
         "label": "Recherche",
         "placeholder": "Entrez un nom",
