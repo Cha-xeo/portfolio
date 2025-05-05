@@ -129,5 +129,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-.tests/
 .app/api/testsTest/
+/portfolio/tests
+/portfolio/app/api/testsTest
