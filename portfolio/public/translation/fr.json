@@ -62,6 +62,7 @@
     "NavBar":{
       "title": "Accueil",
       "about": "A propos",
+      "resume": "CV",
       "experience": "Expériences",
       "games": "Jeux",
       "mobygames": "Client MobyGames"

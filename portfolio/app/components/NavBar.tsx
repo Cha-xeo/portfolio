@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import LanguageSwitcher from './LanguageSwitcher';
 import {useLocale, useTranslations} from 'next-intl';
+import { link } from 'fs';
 
 const NavBar = () => {
     const locale = useLocale();
@@ -15,22 +16,27 @@ const NavBar = () => {
     const links = [
       {
         id: 2,
-        link: "about",
+        link: "/about",
         name: t('about'),
+      },{
+        id: 3,
+        link: "https://wzd38nj5teerpxza.public.blob.vercel-storage.com/Arnaud%20lalande%20cv-K8Sx9d1c4XzbMbfNfpJeLvSkXoOTYe.pdf",
+        name: t('resume'),
+        target: "_blank",
       },
       {
         id: 4,
-        link: "experience",
+        link: "/experience",
         name: t('experience'),
       },
       {
         id: 6,
-        link: "games",
+        link: "/games",
         name: t('games'),
       },
       {
         id: 7,
-        link: "mobygamesapi",
+        link: "/mobygamesapi",
         name: t('mobygames'),
       },
     ];
@@ -50,12 +56,12 @@ const NavBar = () => {
       </div>
       
       <ul className="hidden md:flex">
-        {links.map(({ id, link, name }) => (
+        {links.map(({ id, link, name, target }) => (
           <li
           key={id}
           className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline"
           >
-            <Link href={{pathname:`/${link}`}}>{name}</Link>
+            <Link href={{pathname:`${link}`}} target={id === 3 ? "_blank": ""}>{name}</Link>
           </li>
         ))}
           <li
