@@ -82,8 +82,8 @@ const NavBar = () => {
                 {name}
               </a>
             ) : (
-              <Link href={link}>
-                <a rel="noopener noreferrer">{name}</a>
+              <Link href={{pathname:`${link}`}}>
+                {name}
               </Link>
             )}
           </li>
