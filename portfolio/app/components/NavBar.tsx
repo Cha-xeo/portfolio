@@ -61,6 +61,13 @@ const NavBar = () => {
             {t('title')}
           </Link>
         </h1>
+        <h1 className="text-5xl font-signature ml-2 hover:scale-105">
+        <Link
+          href="/about"
+          >
+          about
+        </Link>
+        </h1>
       </div>
       
       <ul className="hidden md:flex">
