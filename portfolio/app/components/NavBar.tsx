@@ -15,34 +15,38 @@ const NavBar = () => {
 
     const links = [
       {
+        type:"Internal",
         id: 2,
         link: "/about",
         name: t('about'),
       },{
         id: 3,
+        type:"External",
         link: "https://wzd38nj5teerpxza.public.blob.vercel-storage.com/Arnaud%20lalande.pdf",
         name: t('resume'),
         target: "_blank",
-        rel:"noopener noreferrer",
       },{
         id: 4,
+        type:"External",
         link: "https://chachamaru.itch.io/",
         name: "Itch.io",
         target: "_blank",
-        rel:"noopener noreferrer",
       },
       {
         id: 5,
+        type:"Internal",
         link: "/experience",
         name: t('experience'),
       },
       {
         id: 6,
+        type:"Internal",
         link: "/games",
         name: t('games'),
       },
       {
         id: 7,
+        type:"Internal",
         link: "/mobygamesapi",
         name: t('mobygames'),
       },
@@ -52,34 +56,34 @@ const NavBar = () => {
     <nav className="sticky flex flex-row justify-between items-center w-full h-16 px-4 text-white bg-black nav z-50">
       <div>
         <h1 className="text-5xl font-signature ml-2 hover:scale-105">
-          <a
+          <Link
             className="link-underline link-underline-black"
             href="/"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             {t('title')}
-          </a>
+          </Link>
         </h1>
       </div>
       
       <ul className="hidden md:flex">
-        {links.map(({ id, link, name, target, rel }) => (
+        {links.map(({ id, link, name, target, type }) => (
           <li
           key={id}
           className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline"
           >
             {/* <Link href={{pathname:`${link}`}} target={id === 3  || id === 4 ? "_blank": ""}>{name}</Link> */}
             {/* <Link href={{pathname:`${link}`}} target={id === 3  || id === 4 ? "_blank": ""} rel={id === 3  || id === 4 ? "noopener noreferrer": ""}>{name}</Link> */}
-            {link.startsWith('http') ? (
+            {type == "External" ? (
               <a
                 href={link}
                 target={target}
-                rel={rel}
+                rel="noopener noreferrer"
               >
                 {name}
               </a>
             ) : (
-              <Link href={link}>
+              <Link href={link} rel="noopener noreferrer">
                 {name}
               </Link>
             )}
