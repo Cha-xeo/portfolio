@@ -20,7 +20,7 @@ const NavBar = () => {
         name: t('about'),
       },{
         id: 3,
-        link: "https://wzd38nj5teerpxza.public.blob.vercel-storage.com/Arnaud%20lalande%20cv-K8Sx9d1c4XzbMbfNfpJeLvSkXoOTYe.pdf",
+        link: "https://wzd38nj5teerpxza.public.blob.vercel-storage.com/Arnaud%20lalande.pdf",
         name: t('resume'),
         target: "_blank",
       },{
