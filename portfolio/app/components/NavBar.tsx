@@ -101,7 +101,7 @@ const NavBar = () => {
          {/* Mobile Menu Button */}
       <div className="sm:hidden flex justify-between items-center">
         <span className="font-bold text-lg">Menu</span>
-        // className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        {/* // className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden" */}
         <button onClick={toggleMenu} aria-label="Toggle Menu">
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
