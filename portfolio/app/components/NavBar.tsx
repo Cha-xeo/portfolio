@@ -90,7 +90,7 @@ const NavBar = () => {
                 key={name}
                 href={link}
                >
-                {name}
+                {name} -{link}-
               </Link>
             )}
           </li>
