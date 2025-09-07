@@ -23,11 +23,13 @@ const NavBar = () => {
         link: "https://wzd38nj5teerpxza.public.blob.vercel-storage.com/Arnaud%20lalande.pdf",
         name: t('resume'),
         target: "_blank",
+        rel: "noopener noreferrer",
       },{
         id: 4,
         link: "https://chachamaru.itch.io/",
         name: "Itch.io",
         target: "_blank",
+        rel: "noopener noreferrer",
       },
       {
         id: 5,
