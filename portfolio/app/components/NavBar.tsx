@@ -24,13 +24,11 @@ const NavBar = () => {
         type:"External",
         link: "https://wzd38nj5teerpxza.public.blob.vercel-storage.com/Arnaud%20lalande.pdf",
         name: t('resume'),
-        target: "_blank",
       },{
         id: 4,
         type:"External",
         link: "https://chachamaru.itch.io/",
         name: "Itch.io",
-        target: "_blank",
       },
       {
         id: 5,
@@ -66,23 +64,25 @@ const NavBar = () => {
       </div>
       
       <ul className="hidden md:flex">
-        {links.map(({ id, link, name, target, type }) => (
+        {links.map(({ id, link, name, type }) => (
           <li
           key={id}
           className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline"
           >
-            {/* <Link href={{pathname:`${link}`}} target={id === 3  || id === 4 ? "_blank": ""}>{name}</Link> */}
-            {/* <Link href={{pathname:`${link}`}} target={id === 3  || id === 4 ? "_blank": ""} rel={id === 3  || id === 4 ? "noopener noreferrer": ""}>{name}</Link> */}
             {type == "External" ? (
               <a
+                key={name}
                 href={link}
-                target={target}
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 {name}
               </a>
             ) : (
-              <Link href={{pathname:`${link}`}}>
+              <Link
+                key={name}
+                href={link}
+               >
                 {name}
               </Link>
             )}
