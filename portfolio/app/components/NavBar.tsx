@@ -59,7 +59,6 @@ const NavBar = () => {
           <Link
             className="link-underline link-underline-black"
             href="/"
-            rel="noopener noreferrer"
           >
             {t('title')}
           </Link>
@@ -83,8 +82,8 @@ const NavBar = () => {
                 {name}
               </a>
             ) : (
-              <Link href={link} rel="noopener noreferrer">
-                {name}
+              <Link href={link}>
+                <a rel="noopener noreferrer">{name}</a>
               </Link>
             )}
           </li>
