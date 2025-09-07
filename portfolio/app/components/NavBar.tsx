@@ -23,13 +23,11 @@ const NavBar = () => {
         link: "https://wzd38nj5teerpxza.public.blob.vercel-storage.com/Arnaud%20lalande.pdf",
         name: t('resume'),
         target: "_blank",
-        rel: "noopener noreferrer",
       },{
         id: 4,
         link: "https://chachamaru.itch.io/",
         name: "Itch.io",
         target: "_blank",
-        rel: "noopener noreferrer",
       },
       {
         id: 5,
@@ -68,7 +66,8 @@ const NavBar = () => {
           key={id}
           className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline"
           >
-            <Link href={{pathname:`${link}`}} target={id === 3  || id === 4 ? "_blank": ""}>{name}</Link>
+            {/* <Link href={{pathname:`${link}`}} target={id === 3  || id === 4 ? "_blank": ""}>{name}</Link> */}
+            <Link href={{pathname:`${link}`}} target={id === 3  || id === 4 ? "_blank": ""} rel={id === 3  || id === 4 ? "noopener noreferrer": ""}>{name}</Link>
           </li>
         ))}
           <li
